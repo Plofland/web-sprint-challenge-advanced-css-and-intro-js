@@ -272,6 +272,12 @@ function removeArtist(artists, index) {
 // artists.slice(index, (index + 1));
 // artists.slice(index);
 // Also ask how to get repl.it tests to work for this task
+              // let counter = 0;
+              // for (var i = 0; i < 5; i++) {
+              //   counter += i;
+              // }
+              // console.log(counter);
+              // Why does this code return counter as 10 and not 5? (sprint assessment)
 
 
 /**
