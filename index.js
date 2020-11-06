@@ -362,30 +362,34 @@ function getHTML(data){
         <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/starry-night-by-vincent-van-gogh-vincent-van-gogh.jpg"/>
       </div>
       <div class = "name">
-        <a href="artists[i].wikipedia"> artists[i].name</a>         <!-- does artists[i].wikipedia need quotation marks around it even though the wikipedia value already has quotation marks -->
+        <a href={`artists[i].wikipedia`}> artists[i].name</a>         <!-- does artists[i].wikipedia need quotation marks around it even though the wikipedia value already has quotation marks -->
       </div>
       <div class = "bio">artists[i].bio</div>
       </div>
     )
   }
-
-  
-
   }
 
 
 /* 💪💪💪💪💪💪 STRETCH 2: 💪💪💪💪💪💪
 Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order. */
 
-function randomize(/* Code here */){
 
-    /* Code here */
-
+/* Fisher-Yates Modern Shuffle Algorithm */
+function randomize(artists){
+  for (let i = artists.length - 1; i > 0; i--){
+    let j = Math.floor(Math.random() * (i + 1));
+    let temp = artists[i];
+    artists[i] = artists[j];
+    artists[j] = temp;
   }
+}
 
 
  /* 💪💪💪💪💪💪 STRETCH 3: 💪💪💪💪💪💪
  Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) */
+
+ /* Filter Method */
 
  
  
