@@ -264,9 +264,6 @@ Create a function called `removeArtist` that takes two arguments:
 */
 function removeArtist(artists, index) {
   artists.splice(index, 1);
-  // delete artists[index];
-  // artists.slice(index, (index + 1));
-  // artists.slice(index);
    return artists.length;
 }
 
@@ -274,6 +271,7 @@ function removeArtist(artists, index) {
 // delete artists[index];
 // artists.slice(index, (index + 1));
 // artists.slice(index);
+// Also ask how to get repl.it tests to work for this task
 
 
 /**
@@ -350,9 +348,12 @@ The function should console.log 50 chunks of HTML code that match the structure 
 
 ‼️ You do **NOT** need to get these to display on your page, but you can copy and paste the result into your HTML file if you'd like to see what that would look like. */
 
-function getHTML(/* Code here */){
+function getHTML(data){
+  for (i in data){
+    
+  }
 
-    /* Code here */
+  
 
   }
 
